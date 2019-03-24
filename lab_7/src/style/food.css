@@ -1,0 +1,46 @@
+.wtf {
+
+}
+
+.swiper-container {
+  width: 95%;
+  margin-left: 5%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img {
+  width: 85%;
+  height: 580px;
+  margin-left: 7%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .wordWrapper {
+  position: absolute;
+  left: 30%;
+  top: 70px;
+  height: auto;
+  width: 40%;
+  color: #fff;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .wordWrapper .wordHead {
+  border-bottom: 1px solid #fff;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide .wordWrapper .wordDetail {
+  padding-top: 15px;
+  font-size: 20px;
+}

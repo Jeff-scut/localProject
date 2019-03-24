@@ -1,0 +1,52 @@
+.footer {
+  /* min-width: 1000px; */
+  background-color: #e6e6e6;
+  border-top: 1px solid #d4d7d6;
+}
+.footer-contain {
+  width: 900px;
+  height: 127px;
+  margin: 0 auto;
+}
+.footer-word {
+  float: left;
+  height: 83px;
+  margin: 0 auto;
+  padding-top: 45px;
+}
+.footer-word p {
+  font-family: Arial, "SimSun";
+  margin-top: 10px;
+  line-height: 24px;
+  font-size: 12pt;
+  color: #9aa3a0;
+}
+.qrCode {
+  float: right;
+}
+.pic-1 {
+  float: right;
+  padding-top: 32px;
+  padding-left: 35px;
+}
+.pic-2 {
+  float: right;
+  padding-top: 32px;
+}
+.qrCode a {
+  font-family: "楷体";
+  float: left;
+  text-align: right;
+  color: #818181;
+  padding-right: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.qrCode img {
+  max-width: 80px;
+  max-height: 80px;
+  opacity: 0.4;
+}
+.qrCode img:hover{
+  opacity: 1.0;
+}

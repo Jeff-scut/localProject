@@ -1,0 +1,100 @@
+.mapArea {
+  min-width: 1300px;
+  height: auto;
+  margin: 15px 30px;
+}
+
+#mapContainer {
+  width: 70%;
+  height: 500px;
+  border: 1px solid #d4d7d6;
+  overflow: hidden;
+  float: left;
+}
+
+.mapRight {
+  width: 320px;
+  height: auto;
+  float: right;
+  text-align: left;
+}
+
+#msgHere {
+  margin-top: 20px;
+}
+
+.mapArea li{
+  list-style: none;
+  max-width: 300px;
+  border-bottom: 1px solid #e0dbc3;
+  min-height: 80px;
+  /* padding-right: 30px; */
+}
+
+.mapArea ul li .MsgHead {
+  /* width: 90px; */
+  height: 80px;
+  float: left;
+  /* position: absolut; */
+  background: url('../img/r7.png') no-repeat left center;
+  background-size:70px;
+  font-size: 9px;
+  color: #8B8989;
+}
+.mapArea ul li .MsgHead .MsgHeadName {
+  margin-left: 50px;
+  font-size: 12px;
+  max-width: 50px;
+  /* word-break: break-all;
+  word-wrap: break-word; */
+}
+
+.mapArea ul li .MsgMiddle {
+  word-break: break-all;
+  word-wrap: break-word;
+  padding-top:  20px;
+  padding-left: 82px;
+  position: relative;
+  font-size: 16px;
+}
+
+.mapArea ul li .MsgBottom {
+  color: #696969;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 140px;
+  font-size: 12px;
+}
+
+.mapArea .mapRight h3{
+  border-bottom: 1px solid #e0dbc3;
+}
+
+.mapArea .mapRight .controlHere {
+  border-bottom: 1px solid #e0dbc3;
+  margin-right: 60px;
+  width: 100%
+}
+
+#Nickname {
+  width: 50px;
+  float: none;
+}
+
+#MsgContent {
+  margin-top: 20px;
+  height: 80px;
+  width: 200px;
+}
+
+#sendButton {
+  margin-bottom: 10px;
+}
+
+.mapRight .ulWrap{
+
+}
+
+.clear{
+  clear: both;
+}
