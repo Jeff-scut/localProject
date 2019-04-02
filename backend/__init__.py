@@ -1,12 +1,15 @@
-#-- coding:utf-8 --
-from flask import Flask,render_templates
+#encoding:utf-8
+from flask import Flask,render_template
 
 def create_app():
-	app=Flask(__name__,template_folder="templates",static_url_path="/backend/static")
-	from . import main
-	app.register_blueprint(main.main)
-	app.config['SECURE_KEY']='1233211234567kkkbyxgltt'
+	app=Flask(__name__,template_folder="templates",static_folder="static")
+
+	@app.route('/')
+	def hello():
+		return render_template('index.html')
+
 	app.debug=True
 	return app
 
-#上边import main和后面两行是什么意思呀
+
+#卧槽，把staticurl去掉之后就可以了，卧槽
