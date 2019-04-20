@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import MyHeader from './MyHeader';
 import MyFooter from './MyFooter';
 import '../style/community.css';
+import axios from 'axios';
 
 class Community extends Component {
   constructor(props){
     super(props);
 
     this.state={
-      messages:[]
+      messages:[],
+      aaa:[],
+      bbb:[]
     };
   }
 
@@ -70,9 +73,39 @@ class Community extends Component {
           </div>
           <div className="clear"></div>
         </div>
+        <div>
+          <input onChange={event => this.inputChangeAaa(event.target.value)}/>
+          <input onChange={event => this.inputChangeBbb(event.target.value)}/>
+          <input trpe="button" value="发送" onClick={()=>this.sendPost(`http://localhost:5000/readSession`)} />
+        </div>
         <MyFooter />
       </div>
     );
+  }
+
+  sendPost(url){
+    var formData = new FormData();
+    formData.append('aaa', this.state.aaa);
+    formData.append('bbb', this.state.bbb);
+    return axios({
+      method: 'POST',
+      url: url
+      // data: formData
+    }).catch(function(error) {
+      alert('post失败');
+      console.log(error);
+    });
+  }
+
+  inputChangeAaa(term){
+    this.setState({
+      aaa: term
+    });
+  }
+  inputChangeBbb(term){
+    this.setState({
+      bbb: term
+    });
   }
 
 }
